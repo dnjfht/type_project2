@@ -41,8 +41,8 @@ export default class App extends Component {
 
     return (
       <ul>
-        <ClassComponent />
-        <ClassComponent />
+        <ClassComponent href="http://www.google.com" text="go to Google" />
+        <ClassComponent href="https://twitter.com" text="go to Twitter" />
       </ul>
     )
   }
