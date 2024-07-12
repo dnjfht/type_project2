@@ -1,10 +1,8 @@
-import ArrowComponent from './ArrowComponent'
-
 export default function App() {
-  return (
-    <div>
-      <ArrowComponent href="http://www.google.com" text="go to Google" />
-      <ArrowComponent href="https://twitter.com" text="go to Twitter" />
-    </div>
-  )
+  // const texts = [<p key="1">hello</p>, <p key="2">world!</p>]
+
+  const texts = ['hello', 'world', 'ok?', "I'm very happy"].map((text, index) => (
+    <p key={index}>{text}</p>
+  ))
+  return <div>{texts}</div>
 }
