@@ -1,18 +1,11 @@
-import {FC, ReactNode} from 'react'
+import {FC, PropsWithChildren} from 'react'
 
-export type PProps = {
-  children?: ReactNode
-}
+// PropsWithChildren을 사용하면 props에 children을 추가하는 번거로움을 덜 수 있음.
+export type PProps = {}
 
-const P: FC<PProps> = (props): JSX.Element => {
-  const {children} = props
-
-  return (
-    <div>
-      <p>{children}</p>
-      <p>야호!</p>
-    </div>
-  )
+// {...props} => props에 담긴 다양한 속성을 마치 전개 연산자처럼 한꺼번에 전달.
+const P: FC<PropsWithChildren<PProps>> = (props): JSX.Element => {
+  return <p {...props} />
 }
 
 export default P
