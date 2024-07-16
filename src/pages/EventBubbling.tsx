@@ -8,15 +8,10 @@ export default function EventBubbling() {
   }
 
   const onButtonClick = (e: SyntheticEvent) => {
-    const {isTrusted, target, bubbles, currentTarget} = e
+    // const {isTrusted, target, bubbles, currentTarget} = e
 
-    console.log(
-      'click event starts on <button>',
-      isTrusted,
-      target,
-      bubbles,
-      currentTarget
-    )
+    console.log('mouse click occurs on <button> and call stopPropagation')
+    e.stopPropagation()
   }
 
   return (
