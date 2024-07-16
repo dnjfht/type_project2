@@ -28,10 +28,10 @@ const App = (): JSX.Element => {
       <VariousInputs />
       <StopPropagation />
       <EventBubbling />
-      <DispatchEvent />
+      {/* <DispatchEvent />
       <ReactOnClick />
       <OnClick />
-      <EventListener />
+      <EventListener /> */}
     </div>
   )
 }
