@@ -1,15 +1,19 @@
-import P from './P'
-import DispatchEvent from './pages/DispatchEvent'
-import DragDrop from './pages/DragDrop'
-import EventBubbling from './pages/EventBubbling'
-import EventListener from './pages/EventListener'
-import FileDrop from './pages/FileDrop'
-import FileInput from './pages/FileInput'
-import OnChange from './pages/OnChange'
-import OnClick from './pages/OnClick'
-import ReactOnClick from './pages/ReactOnClick'
-import StopPropagation from './pages/StopPropagation'
-import VariousInputs from './pages/VariousInputs'
+// import DispatchEvent from './pages/event/DispatchEvent'
+import DragDrop from './pages/event/DragDrop'
+import EventBubbling from './pages/event/EventBubbling'
+// import EventListener from './pages/event/EventListener'
+import FileDrop from './pages/event/FileDrop'
+import FileInput from './pages/event/FileInput'
+import OnChange from './pages/event/OnChange'
+// import OnClick from './pages/event/OnClick'
+// import ReactOnClick from './pages/event/ReactOnClick'
+import StopPropagation from './pages/event/StopPropagation'
+import VariousInputs from './pages/event/VariousInputs'
+import BootStrap from './pages/style/BootStrap'
+import Icon from './pages/style/Icon'
+import Style from './pages/style/Style'
+import UsingIcon from './pages/style/UsingIcon'
+import UsingIconWithCSSClass from './pages/style/UsingIconWithCSSClass'
 
 const App = (): JSX.Element => {
   // window.addEventListener('click', (e: Event) => console.log('mouse click occurs.'))
@@ -21,17 +25,23 @@ const App = (): JSX.Element => {
 
   return (
     <div>
-      <FileDrop />
+      {/*<FileDrop />
       <DragDrop />
       <FileInput />
       <OnChange />
       <VariousInputs />
       <StopPropagation />
       <EventBubbling />
-      {/* <DispatchEvent />
+      <DispatchEvent />
       <ReactOnClick />
       <OnClick />
       <EventListener /> */}
+
+      <UsingIconWithCSSClass />
+      <UsingIcon />
+      <Style />
+      <Icon />
+      <BootStrap />
     </div>
   )
 }

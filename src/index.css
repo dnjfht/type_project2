@@ -1,11 +1,7 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/* @import url('https://fonts.googleapis.com/icon?family=Material+Icons');*/
+/* fontsource를 사용하여 오픈소스 웹 안전 글꼴을 패키지 형태로 설치했으므로 @import 규칙은 이제 필요 없음. */
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+.material-icons {
+  font-family: 'Material Icons';
+  display: inline-block;
 }
